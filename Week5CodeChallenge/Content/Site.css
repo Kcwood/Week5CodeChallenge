@@ -1,0 +1,152 @@
+﻿body {
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #fee;
+    background-color: #003b6f;
+    font:bold;
+    
+    
+}
+
+header, footer, nav, section {
+    display:inline-block;
+    border-color:#fee;
+    color:#fee;
+  
+}
+
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+a {
+    color:#fee;
+    text-align:right;
+
+    
+}
+
+a:hover {
+    color: #003b6f;
+}
+
+.homeImg {
+    width:100%;
+}
+
+.div1 {
+    width:33%;
+    border-color:#fee;
+    border:solid;
+    border-width:1px;
+    display:inline-block;
+}
+
+.div2 {
+    width:33%;
+    border-color:#fee;
+    border:solid;
+    border-width:1px;
+    display:inline-block;
+}
+
+.div3 {
+    width:33%;
+    border-color:#fee;
+    border:solid;
+    border-width:1px;
+    display:inline-block;
+}
+
+.workpage {
+    text-align:center
+}
+
+.work1 {
+    display:inline-block;
+    width:45%;
+    border:solid;
+    border-color:#fee;
+    text-align:center;
+}
+
+.work2 {
+    display:inline-block;
+    width:45%;
+    border:solid;
+    border-color:#fee;
+    text-align:center;
+}
+
+.work3 {
+    display:inline-block;
+    width:45%;
+    border:solid;
+    border-color:#fee;
+    text-align:center;
+}
+
+.work4 {
+    display:inline-block;
+    width:45%;
+    border:solid;
+    border-color:#fee;
+    text-align:center;
+}
+
+.img {
+    height:520px;
+    margin-top:8px;
+}
+
+.active {
+    display:inline-block;
+}
+

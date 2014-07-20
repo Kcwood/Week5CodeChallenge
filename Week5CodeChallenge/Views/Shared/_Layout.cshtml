@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header>
+        <div>
+            <img class="headerImg" src="http://cdn-img.easylogo.cn/gif/51/51700.gif" />
+            <nav class="nav" id="header">
+                <a href="@Url.Action("Index","Home")">
+                    Home
+                </a>
+                 | <a href="@Url.Action("Index","About")">
+                    About
+                </a>
+                 | <a href="@Url.Action("Index","Work")">
+                    Work
+                </a>
+                 | <a href="@Url.Action("Index","Careers")">
+                    Careers
+                </a>
+                 | <a href="@Url.Action("Index","Contact")">
+                    Contact
+                </a>
+            </nav>
+        </div>
+        <a></a>
+    </header>
+    <div id="content">
+        @RenderBody()
+    </div>
+    
+    <footer class="footer">
+        <span>
+            Copyright 2014 Fake Studio.
+        </span>
+        <nav class="nav" id="footer">
+                <a href="@Url.Action("Index","Home")">
+                    Home 
+                </a>
+                 | <a href="@Url.Action("Index","About")">
+                    About
+                </a>
+                 | <a href="@Url.Action("Index","Work")">
+                    Work
+                </a>
+                 | <a href="@Url.Action("Index","Careers")">
+                    Careers
+                </a>
+                 | <a href="@Url.Action("Index","Contact")">
+                    Contact
+                </a>
+        </nav>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
