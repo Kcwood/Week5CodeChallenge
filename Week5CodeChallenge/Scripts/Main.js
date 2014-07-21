@@ -14,3 +14,9 @@
         }
     });
 });
+
+$(document).ready(function () {
+    $("#basic_button").click(function () {
+        jAlert('Example of a basic alert box in jQuery', 'jQuery basic alert box');
+    });
+});
