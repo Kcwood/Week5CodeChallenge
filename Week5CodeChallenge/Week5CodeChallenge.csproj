@@ -155,7 +155,6 @@
       <DependentUpon>ContactInfo.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ContactInfoValidation.cs" />
-    <Compile Include="Models\ContactInfoValidationController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -264,6 +263,13 @@
     <Content Include="Views\About\Index.cshtml" />
     <Content Include="Views\Work\Index.cshtml" />
     <Content Include="Views\Careers\Index.cshtml" />
+    <Content Include="Views\About\Who.cshtml" />
+    <Content Include="Views\About\What.cshtml" />
+    <Content Include="Views\About\Where.cshtml" />
+    <Content Include="Views\About\Why.cshtml" />
+    <Content Include="Views\About\How.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Contact\ThankYou.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -69,8 +69,6 @@ textarea {
 a {
     color:#fee;
     text-align:right;
-
-    
 }
 
 a:hover {
@@ -149,4 +147,9 @@ a:hover {
 .active {
     display:inline-block;
 }
+
+.about {
+    
+}
+
 

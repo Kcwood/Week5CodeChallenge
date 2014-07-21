@@ -10,18 +10,11 @@ namespace Week5CodeChallenge.Controllers
     {
         //
         // GET: /Contact/
-
         [HttpGet]
         public ActionResult Index()
         {
-            if (Request.IsAjaxRequest())
-            {
-                return PartialView();
-            }
-            //Create a new contact form object
-            // pass to our view
-            Models.ContactInfo cf = new Models.ContactInfo();
-            return View(cf);
+            //making a contact page, requires a contactForm object
+            return View(new Models.ContactInfo());
         }
 
         [HttpPost]

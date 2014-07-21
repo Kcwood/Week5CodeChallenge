@@ -1,22 +1,19 @@
-﻿$(document).ready(function () {
-    $('.tabset>li>a').on('click', function () {
-        var clicked = $(this).data('id');
-        var active = $('.tabset>li.active>a').data('id');
-        if (clicked !== active) {
-            $('.tableset>li.active').removeClass('active');
-            $(this).parent().addClass('active');
-            $('#' + active).fadeOut(200, function () {
-                $('#' + clicked).fadeIn(200, function () {
-                    $('#' + clicked).removeClass('hide');
-                    $('#' + active).addClass('hide');
-                });
-            });
-        }
-    });
-});
-
+﻿//Load the dom into a jQuery object
+//after its fully loaded (.ready())
 $(document).ready(function () {
-    $("#basic_button").click(function () {
-        jAlert('Example of a basic alert box in jQuery', 'jQuery basic alert box');
+    //selecting my tab links
+    $('.about li').on('click', function () {
+        //When we click on out li,run this function
+        //Get the url from data-url for this li
+        var url = $(this).data('url');
+        //making an Ajax get request to the url 
+        $.get(url, function (data) {
+            //selecting our tab content area
+            $('#tabContent').html(data);
+        });
+        //remove the current active tab
+        $('.about li').removeClass('active');
+        //add the active class to our current tab
+        $(this).addClass('active');
     });
 });

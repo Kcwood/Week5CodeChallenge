@@ -13,6 +13,11 @@ namespace Week5CodeChallenge.Controllers
 
         public ActionResult Index()
         {
+            return View();
+        }
+
+        public ActionResult Who()
+        {
             if (Request.IsAjaxRequest())
             {
                 return PartialView();
@@ -21,6 +26,15 @@ namespace Week5CodeChallenge.Controllers
         }
 
         public ActionResult What()
+        {
+            if (Request.IsAjaxRequest())
+            {
+                return PartialView();
+            }
+            return View();
+        }
+
+        public ActionResult Where()
         {
             if (Request.IsAjaxRequest())
             {
@@ -39,15 +53,6 @@ namespace Week5CodeChallenge.Controllers
         }
 
         public ActionResult How()
-        {
-            if (Request.IsAjaxRequest())
-            {
-                return PartialView();
-            }
-            return View();
-        }
-
-        public ActionResult Where()
         {
             if (Request.IsAjaxRequest())
             {
